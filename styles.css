@@ -96,18 +96,40 @@ body {
     .sidebar {
       width: 100%;
       border-right: none;
-      border-bottom: 1px solid #eee;
+      border-bottom: 0.5px solid #e5e7eb;
       padding: 0;
       display: flex;
       justify-content: center;
+      align-items: center;
+      min-height: unset;
     }
     .sidebar ul {
       display: flex;
       flex-direction: row;
       gap: 24px;
+      margin: 0;
+      padding: 12px 0;
+      width: 100%;
+      justify-content: center;
+    }
+    .sidebar li {
+      margin-bottom: 0;
     }
     .content {
-      padding: 32px 12px 12px 12px;
+      padding: 24px 8px 8px 8px;
+      max-width: 100%;
+      margin-left: 0;
+      align-items: center;
+    }
+    .main-section {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+    .resume-download {
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
     }
   }
 
