@@ -155,6 +155,9 @@ body.dark-mode .content {
 body.dark-mode a {
   color: #4f8cff;
 }
+body.dark-mode h2 {
+  color: #f3f3f3;
+}
 .resume-download {
   display: inline-block;
   margin: 1em 0 0 0;
