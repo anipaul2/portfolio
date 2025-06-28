@@ -4,107 +4,172 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aniketh Paul – Portfolio</title>
-  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Inter:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script>
-    function showSection(section) {
-      document.querySelectorAll('.main-section').forEach(s => s.style.display = 'none');
-      document.getElementById(section).style.display = 'block';
-    }
-    window.onload = function() {
-      showSection('about');
-    };
-  </script>
 </head>
-<body>
-  <div class="container">
-    <nav class="sidebar">
-      <ul>
-        <li><a href="#" onclick="showSection('about');return false;">About</a></li>
-        <li><a href="#" onclick="showSection('proof');return false;">Proof of Work</a></li>
-        <li><a href="#" onclick="showSection('certs');return false;">Certifications</a></li>
-        <li><a href="#" onclick="showSection('contact');return false;">Contact</a></li>
-      </ul>
-    </nav>
-    <main class="content">
-      <section id="about" class="main-section">
-        <div style="display: flex; flex-direction: column; align-items: flex-start; max-width: 540px; position: relative; width: 100%;">
-          <div style="position: absolute; top: 0; right: 0;">
-            <button id="theme-toggle" title="Toggle Light/Dark Mode" style="background: none; border: none; font-size: 1.5em; cursor: pointer;">🌙</button>
-          </div>
-          <span style="font-size: 2em; font-weight: 600; margin-bottom: 0.2em; margin-top: 0;">Aniketh Paul</span>
-          <p style="margin-top: 1.2em; max-width: 540px;">
-            I live in India and am currently working at <a href="https://x.com/Intract_HQ" target="_blank">Intract</a> as a DeFi Researcher. Previously, I worked at <a href="https://x.com/ItsBlockchain" target="_blank">ItsBlockchain</a> as a crypto writer and contributed to <a href="https://x.com/summerofbitcoin" target="_blank">Summer of Bitcoin</a>. I am proficient in Product management, research, company growth breakdowns, and technical writing.<br><br>
-            Outside of work, I enjoy trading on <a href="https://x.com/HyperliquidX" target="_blank">Hyperliquid</a>, farming airdrops, and working out.
-          </p>
-          <a href="https://drive.google.com/file/d/1m0Fk1ti-sTLTlWgcLmb2_a77mzDD18rl/view?usp=sharing" target="_blank" class="resume-download">Download Resume (PDF)</a>
-        </div>
-      </section>
-      <section id="proof" class="main-section" style="display:none">
-        <h2>Proof of Work</h2>
-        <ul>
-          <li><a href="https://leetcode.com/u/Anipaul1/" target="_blank">LeetCode</a> — Solved 400+ algorithm and data structure problems. (not much active right now)</li>
-          <li><a href="https://intract-io.notion.site/Research-Proof-of-Humanity-d03bbca3efa64482a9e07bd2f3f8953a" target="_blank">Proof of Humanity Research (Intract)</a> — Led research and competitor analysis, supporting $590k+ in revenue and 2M+ user claims.</li>
-          <li><a href="https://paragraph.com/@0x5b8eba0b8fafa9d92ec667d7440d5ac3e9d574ce/perpetual-dexes" target="_blank">Current Perpetual DEXes I Am Bullish On</a> — An in-depth analysis of the perpetual DEX landscape, highlighting the protocols I find most promising and the reasons behind my conviction.</li>
-          <li><a href="https://intract-io.notion.site/Privacy-Preserving-Technologies-174b31fb6eb6800da2dbfa84814d2b6d" target="_blank">Privacy-Preserving Technologies (Intract)</a> — Authored comprehensive research documentation on Trusted Execution Environments (TEEs), Multi-Party Computation (MPC), and other privacy solutions, including their benefits, trade-offs, and the current state of development.</li>
-          <li><a href="https://www.notion.so/intract-io/Web3-Onboarding-Intract-181b31fb6eb680cabb14c40cfe247ae8" target="_blank">Web3 Onboarding (Intract)</a> — Developed an onboarding guide for individuals new to web3, providing a structured exploration of the DeFi landscape using Intract's platform.</li>
-          <li><a href="https://www.notion.so/intract-io/Token-Utility-Lists-1edb31fb6eb6806abebbdcd9926bb0be" target="_blank">Token Utility Lists (Intract)</a> — Conducted correlation analysis on recent token launches.</li>
-          <li><a href="https://github.com/talaia-labs/rust-teos/pull/215" target="_blank">Lightning Network Blog (Summer of Bitcoin)</a> — Contributed a pull request to the rust-teos (Eye of Satoshi) codebase as part of the Summer of Bitcoin program.</li>
-          <li><a href="https://shardeum.org/blog/testnet-vs-mainnet/" target="_blank">Testnet vs Mainnet (official Shardeum Blog)</a> — Published on the official Shardeum blog, explaining the key differences and concepts between testnets and mainnets in blockchain ecosystems.</li>
-          <li><a href="https://docs.google.com/document/d/1NzCuoQSVsMpiLLPuKcOCvalCs_80XjtlJXHRt04NCOs/edit?usp=sharing" target="_blank">Rollups (ItsBlockchain)</a> — Wrote an in-depth explainer on rollups.</li>
-          <li><a href="https://docs.google.com/document/d/1rOcuh10uCsZu1kMyByM1wf1Rtm1zlPigx0_Cx2TUGPI/edit?tab=t.0" target="_blank">Layer1 Blockchains (ItsBlockchain)</a> — Deep dive on upcoming Layer1's</li>
-          <li><a href="https://docs.google.com/document/d/1a8ImBzE2ygj8Zzv4ReoJa74FZ5mESLOEFr-MN8MIJmE/edit?tab=t.0" target="_blank">Lens Protocol (ItsBlockchain)</a> — An overview on the Lens ecosystem.</li>
-          <li><a href="https://docs.google.com/document/d/1YLsnC7MybNyseugug4U5h4DwvTSqeJl9JLzjaaqdOhA/edit?tab=t.0#heading=h.tork6yron1h0" target="_blank">EIP-4844 (ItsBlockchain)</a> — A Game-Changer for Smart Contract Execution</li>
-          <li><a href="https://docs.google.com/document/d/1DMeqAKazzjm5xb0IuG2sRNXQ_nZGi7h_8EkHSaWfZ3w/edit?tab=t.0" target="_blank">Satori Finance Content Plan</a>: 2-week content plan (<a href="https://x.com/radarblock" target="_blank">Radarblock</a>)</li>
-          <li><a href="https://onecdotin.hashnode.dev/overview-of-blockchain-environments" target="_blank">Overview of Blockchain Environments</a> <a href="https://townhall.hashnode.com/the-epic-hashnode-writeathon-the-winners#heading-new-additions-to-the-honorable-mentions-list" target="_blank">[Hashnode Town Hall]</a> — Earned honourable mention in Epic Hashnode Writeathon (62nd place).</li>
-          <li><a href="https://onecdotin.hashnode.dev/" target="_blank">Onecdot Hashnode Blog Series</a> — Wrote 9 blogs as a developer advocate, covering topics such as minting gaming assets on Polygon using Onecdot APIs, minting NFTs with simple RESTful APIs, and more.</li>
-        </ul>
-      </section>
-      <section id="certs" class="main-section" style="display:none">
-        <h2>Certifications</h2>
-        <ul>
-          <li><a href="https://www.coursera.org/learn/bitcoin-and-cryptocurrency-technologies" target="_blank">CS120: Bitcoin for Developers I</a></li>
-          <li><a href="https://www.saylor.org/courses/prdv151/" target="_blank">PRDV151: Bitcoin for Everybody</a></li>
-          <li><a href="https://www.coursera.org/learn/introduction-to-machine-learning-in-production" target="_blank">Introduction to Machine Learning in Production</a></li>
-          <li><a href="https://www.coursera.org/learn/machine-learning-data-lifecycle-in-production" target="_blank">Machine Learning Data Lifecycle in Production</a></li>
-          <li><a href="https://www.goldmansachs.com/careers/students/programs/emea/engineering-virtual-program.html" target="_blank">Engineering Virtual Program (Goldman Sachs)</a></li>
-          <li><a href="https://www.coursera.org/learn/smart-contracts" target="_blank">Smart Contracts (University at Buffalo)</a></li>
-          <li><a href="https://www.coursera.org/learn/machine-learning" target="_blank">Machine Learning</a></li>
-          <li><a href="https://www.insidesherpa.com/virtual-internships/prototype/3A5Gq5f5i9f7K7y7J/Software-Engineering-JPMorgan-Chase" target="_blank">Software Engineering Virtual Experience (JPMorganChase)</a></li>
-          <li><a href="https://www.coursera.org/learn/algorithmic-toolbox" target="_blank">Algorithmic Toolbox</a></li>
-          <li><a href="https://www.hackerrank.com/certificates/abcdef" target="_blank">Problem Solving (Basic)</a></li>
-          <li><a href="https://www.hackerrank.com/certificates/ghijkl" target="_blank">Python (Basic)</a></li>
-          <li><a href="https://www.coursera.org/learn/blockchain-basics" target="_blank">Blockchain Basics</a></li>
-        </ul>
-      </section>
-      <section id="contact" class="main-section" style="display:none">
-        <h2>Contact</h2>
-        <p style="max-width: 540px;">
-          I am most active on <a href="https://farcaster.xyz/anipl1" target="_blank">Farcaster</a> and <a href="https://x.com/Alphooor" target="_blank">Twitter</a>. You can also connect with me on <a href="https://www.linkedin.com/in/aniketh-paul-7728691bb/" target="_blank">LinkedIn</a> or reach out via email at <a href="mailto:aniketh131@gmail.com">aniketh131@gmail.com</a>.
-        </p>
-      </section>
-    </main>
+<body class="cypherpunk-bg">
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
   </div>
-  <style>
-    a {
-      color: #1877f2;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  
+  <header class="hero fade-in-up">
+    <img src="https://pbs.twimg.com/profile_images/1903541066835668992/gHnmFuZG_400x400.jpg" alt="Aniketh Paul" class="hero-img floating">
+    <div class="hero-text">
+      <h1 class="glitch" data-text="Aniketh Paul">Aniketh Paul</h1>
+      <p class="tagline typewriter">Product Ops. Researcher. Community Builder.</p>
+      <p class="intro">Building at the intersection of DeFi, product, and community. I break down company growth, write technical docs, and help onboard the next wave of users. <span class="neon-subtle">Let's connect.</span></p>
+    </div>
+  </header>
+  
+  <main>
+    <section class="about-section fade-in-up">
+      <h2 class="section-title">About</h2>
+      <div class="about-content">
+        <p>I live in India and am currently working at <a href="https://x.com/Intract_HQ" target="_blank">Intract</a> as a DeFi Researcher. Previously, I worked at <a href="https://x.com/ItsBlockchain" target="_blank">ItsBlockchain</a> as a crypto writer and contributed to <a href="https://x.com/summerofbitcoin" target="_blank">Summer of Bitcoin</a>. I am proficient in Product operations, research, company growth breakdowns, technical writing, and community management.<br><br>
+        Outside of work, I enjoy trading on <a href="https://x.com/HyperliquidX" target="_blank">Hyperliquid</a>, farming airdrops, and working out.</p>
+      </div>
+    </section>
+    
+    <section class="proof-section fade-in-up">
+      <h2 class="section-title">Proof of Work</h2>
+      <div class="proof-cards">
+        <div class="proof-card card-animate">
+          <h3>LeetCode</h3>
+          <p>Solved 400+ algorithm and data structure problems. (not much active right now) <a href="https://leetcode.com/u/Anipaul1/" target="_blank">Profile</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Proof of Humanity Research (Intract)</h3>
+          <p>Led research and competitor analysis, supporting $590k+ in revenue and 2M+ user claims. <a href="https://intract-io.notion.site/Research-Proof-of-Humanity-d03bbca3efa64482a9e07bd2f3f8953a" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Current Perpetual DEXes I Am Bullish On</h3>
+          <p>An in-depth analysis of the perpetual DEX landscape, highlighting the protocols I find most promising and the reasons behind my conviction. <a href="https://paragraph.com/@0x5b8eba0b8fafa9d92ec667d7440d5ac3e9d574ce/perpetual-dexes" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Privacy-Preserving Technologies (Intract)</h3>
+          <p>Authored comprehensive research documentation on Trusted Execution Environments (TEEs), Multi-Party Computation (MPC), and other privacy solutions. <a href="https://intract-io.notion.site/Privacy-Preserving-Technologies-174b31fb6eb6800da2dbfa84814d2b6d" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Web3 Onboarding (Intract)</h3>
+          <p>Developed an onboarding guide for individuals new to web3, providing a structured exploration of the DeFi landscape using Intract's platform. <a href="https://www.notion.so/intract-io/Web3-Onboarding-Intract-181b31fb6eb680cabb14c40cfe247ae8" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Token Utility Lists (Intract)</h3>
+          <p>Conducted correlation analysis on recent token launches. <a href="https://www.notion.so/intract-io/Token-Utility-Lists-1edb31fb6eb6806abebbdcd9926bb0be" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Lightning Network Blog (Summer of Bitcoin)</h3>
+          <p>Contributed a pull request to the rust-teos (Eye of Satoshi) codebase as part of the Summer of Bitcoin program. <a href="https://github.com/talaia-labs/rust-teos/pull/215" target="_blank">View PR</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Testnet vs Mainnet (official Shardeum Blog)</h3>
+          <p>Published on the official Shardeum blog, explaining the key differences and concepts between testnets and mainnets in blockchain ecosystems. <a href="https://shardeum.org/blog/testnet-vs-mainnet/" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Rollups (ItsBlockchain)</h3>
+          <p>Wrote an in-depth explainer on rollups. <a href="https://docs.google.com/document/d/1NzCuoQSVsMpiLLPuKcOCvalCs_80XjtlJXHRt04NCOs/edit?usp=sharing" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Layer1 Blockchains (ItsBlockchain)</h3>
+          <p>Deep dive on upcoming Layer1's. <a href="https://docs.google.com/document/d/1rOcuh10uCsZu1kMyByM1wf1Rtm1zlPigx0_Cx2TUGPI/edit?tab=t.0" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Lens Protocol (ItsBlockchain)</h3>
+          <p>An overview on the Lens ecosystem. <a href="https://docs.google.com/document/d/1a8ImBzE2ygj8Zzv4ReoJa74FZ5mESLOEFr-MN8MIJmE/edit?tab=t.0" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>EIP-4844 (ItsBlockchain)</h3>
+          <p>A Game-Changer for Smart Contract Execution. <a href="https://docs.google.com/document/d/1YLsnC7MybNyseugug4U5h4DwvTSqeJl9JLzjaaqdOhA/edit?tab=t.0#heading=h.tork6yron1h0" target="_blank">Read more</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Socials & Community Management</h3>
+          <p>Managed and grew Intract's <a href="https://t.me/IntractCommunity" target="_blank">Telegram</a> and <a href="https://x.com/IntractQuests" target="_blank">Twitter</a>, hosted Discord calls, and spoke at Web3 events and meetups (Chandigarh University, Solana, etc.) to onboard and support new users.</p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Overview of Blockchain Environments</h3>
+          <p>Earned honourable mention in Epic Hashnode Writeathon (62nd place). <a href="https://onecdotin.hashnode.dev/overview-of-blockchain-environments" target="_blank">Read more</a> <a href="https://townhall.hashnode.com/the-epic-hashnode-writeathon-the-winners#heading-new-additions-to-the-honorable-mentions-list" target="_blank">[Hashnode Town Hall]</a></p>
+        </div>
+        <div class="proof-card card-animate">
+          <h3>Onecdot Hashnode Blog Series</h3>
+          <p>Wrote 9 blogs as a developer advocate, covering topics such as minting gaming assets on Polygon using Onecdot APIs, minting NFTs with simple RESTful APIs, and more. <a href="https://onecdotin.hashnode.dev/" target="_blank">View series</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="skills-section fade-in-up">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-badges">
+        <span class="badge badge-animate">Product Ops</span>
+        <span class="badge badge-animate">DeFi Research</span>
+        <span class="badge badge-animate">Community</span>
+        <span class="badge badge-animate">Technical Writing</span>
+        <span class="badge badge-animate">Growth Analysis</span>
+        <span class="badge badge-animate">Content Strategy</span>
+        <span class="badge badge-animate">Open Source</span>
+      </div>
+    </section>
+    
+    <section class="contact-section fade-in-up">
+      <h2 class="section-title">Contact</h2>
+      <p>DM on <a href="https://farcaster.xyz/anipl1" target="_blank">Farcaster</a> or <a href="https://x.com/Alphooor" target="_blank">Twitter</a>, or email <a href="mailto:aniketh131@gmail.com">aniketh131@gmail.com</a>.</p>
+    </section>
+  </main>
+
   <script>
-    // Light/Dark mode toggle with icon change
-    const themeToggle = document.getElementById('theme-toggle');
-    function updateThemeIcon() {
-      themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
-    }
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      updateThemeIcon();
+    // Smooth scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in-up, .card-animate, .badge-animate').forEach(el => {
+      observer.observe(el);
     });
-    updateThemeIcon();
+
+    // Parallax effect for floating shapes
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const shapes = document.querySelectorAll('.shape');
+      
+      shapes.forEach((shape, index) => {
+        const speed = 0.5 + (index * 0.2);
+        shape.style.transform = `translateY(${scrolled * speed}px)`;
+      });
+    });
+
+    // Typewriter effect
+    function typeWriter(element, text, speed = 100) {
+      let i = 0;
+      element.innerHTML = '';
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
+        }
+      }
+      type();
+    }
+
+    // Initialize typewriter when page loads
+    window.addEventListener('load', () => {
+      const tagline = document.querySelector('.typewriter');
+      if (tagline) {
+        const text = tagline.textContent;
+        setTimeout(() => typeWriter(tagline, text, 80), 1000);
+      }
+    });
   </script>
 </body>
 </html>
