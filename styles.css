@@ -365,6 +365,13 @@ h2 {
   flex-wrap: wrap;
   gap: 12px;
 }
+.skills-badges .badge, .skills-badges .badge:visited {
+  text-decoration: none !important;
+}
+.skills-badges .badge:hover {
+  color: #fff;
+  text-decoration: none !important;
+}
 .badge {
   background: #181a20;
   border: 1.5px solid #00ffe7;
@@ -794,3 +801,6 @@ li strong {
   color: inherit;
   font-weight: 600;
 }
+
+.certification-cards, .certification-card { display: none !important; }
+.certifications-section .skills-badges { margin-top: 24px; }
